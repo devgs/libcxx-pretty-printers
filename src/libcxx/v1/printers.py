@@ -318,7 +318,7 @@ class StdVectorPrinter:
                 return '%s<bool> (length=%d, capacity=%d)' % (self.typename, int(length), int(capacity))
         else:
             finish = self.val['__end_']
-            end = self.val['__end_cap_']['__first_']
+            end = self.val['__end_cap_']['__value_']
             length = finish - start
             capacity = end - start
             if length == 0:
